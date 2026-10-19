@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Lemon Waves</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="block overflow-x-hidden">
+    <nav
+        class="relative w-full max-w-[1138px] h-auto lg:h-[60px] flex items-center justify-between gap-4 px-5 lg:px-[30px] mx-auto mt-[30px] mb-[30px] lg:mb-[50px]">
+        <!-- Logo and Our Services -->
+        <div class="flex items-center gap-3 sm:gap-5 lg:gap-[70px]">
+            <img src="images/Rectangle 3.png" alt="Logo" class="w-[90px] h-[60px] shrink-0">
+
+            <span class="text-primary text-[16px] border-b-2 border-b-accent pb-2 whitespace-nowrap">
+                Our Services
+            </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center gap-[20px]">
+            <span
+                class="text-primary text-[16px] hover:text-accent border-b-2 border-transparent hover:border-accent transition duration-300 cursor-pointer">
+                About
+            </span>
+
+            <span
+                class="text-primary text-[16px] hover:text-accent border-b-2 border-transparent hover:border-accent transition duration-300 cursor-pointer">
+                Blog&News
+            </span>
+
+            <span
+                class="text-primary text-[16px] hover:text-accent border-b-2 border-transparent hover:border-accent transition duration-300 cursor-pointer">
+                Contact
+            </span>
+        </div>
+
+        <!-- Desktop Account and Phone -->
+        <div class="hidden lg:flex items-center gap-[20px]">
+            <span
+                class="text-primary text-[16px] hover:text-accent border-b-2 border-transparent hover:border-accent transition duration-300 cursor-pointer">
+                Account
+            </span>
+
+            <span class="text-gray-400">|</span>
+
+            <span
+                class="text-primary text-[16px] hover:text-accent border-b-2 border-transparent hover:border-accent transition duration-300 cursor-pointer whitespace-nowrap">
+                <i class="fa-solid fa-phone text-accent"></i>
+                +2349067322844
+            </span>
+        </div>
+
+        <!-- Hamburger Button: Mobile Only -->
+        <button id="menuBtn" type="button"
+            class="lg:hidden flex flex-col justify-center items-center gap-[6px] w-[44px] h-[44px] shrink-0"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span class="block w-[28px] h-[3px] rounded-full bg-accent transition-all duration-300"></span>
+            <span class="block w-[28px] h-[3px] rounded-full bg-accent transition-all duration-300"></span>
+            <span class="block w-[28px] h-[3px] rounded-full bg-accent transition-all duration-300"></span>
+        </button>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu"
+            class="hidden absolute top-full left-0 z-50 w-full flex-col gap-5 bg-white px-5 py-6 shadow-lg lg:hidden">
+            <a href="#about" class="text-primary text-[16px] hover:text-accent transition duration-300">
+                About
+            </a>
+
+            <a href="#blog" class="text-primary text-[16px] hover:text-accent transition duration-300">
+                Blog&News
+            </a>
+
+            <a href="#contact" class="text-primary text-[16px] hover:text-accent transition duration-300">
+                Contact
+            </a>
+
+            <a href="#account" class="text-primary text-[16px] hover:text-accent transition duration-300">
+                Account
+            </a>
+
+            <a href="tel:+2349067322844" class="text-primary text-[16px] hover:text-accent transition duration-300">
+                <i class="fa-solid fa-phone text-accent mr-2"></i>
+                +2349067322844
+            </a>
+        </div>
+    </nav>
+
+
+    <hero
+        class="w-full max-w-[1138px] block items-center justify-between px-5 lg:px-[30px] mx-auto mt-[30px] mb-[30px]">
+        <ul class="flex flex-wrap gap-[20px] text-[16px] text-primary">
+
+            <li
+                class="cursor-pointer border-b-2 border-b-accent pb-2 text-[15px] font-semibold leading-none transition duration-300">
+                Hosting
+            </li>
+
+            <li
+                class="cursor-pointer border-b-2 border-b-[#E5E5E5] pb-2 text-[15px] font-semibold leading-none transition duration-300 hover:border-b-accent hover:text-accent">
+                Domain
+            </li>
+
+            <li
+                class="cursor-pointer border-b-2 border-b-[#E5E5E5] pb-2 text-[15px] font-semibold leading-none transition duration-300 hover:border-b-accent hover:text-accent">
+                SEO
+            </li>
+
+            <li
+                class="cursor-pointer border-b-2 border-b-[#E5E5E5] pb-2 text-[15px] font-semibold leading-none transition duration-300 hover:border-b-accent hover:text-accent">
+                Email
+            </li>
+
+        </ul>
+        <section
+            class="mx-auto mt-6 mb-10 block w-full max-w-[1198px] px-4 sm:px-6 lg:mt-[30px] lg:mb-[50px] lg:px-[30px]">
+
+            <!-- Keep your existing Hosting / Domain / SEO / Email list here -->
+
+            <div class="mt-5 flex flex-col items-center justify-between gap-8 lg:mt-[5px] lg:flex-row lg:gap-8">
+                <div class="flex w-full flex-col lg:max-w-[608px] lg:flex-1">
+                    <h1
+                        class="mb-5 mt-5 text-[34px] font-bold leading-tight text-primary sm:text-[42px] md:text-[48px] lg:text-[64px]">
+                        Premium Web Hosting for Your Website
+                    </h1>
+                    <p class="w-full max-w-[448px] text-base leading-7 opacity-60">
+                        Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support.
+                    </p>
+                    <div class="mt-8 mb-8 flex flex-wrap gap-4 sm:gap-6 lg:mt-[50px]">
+                        <!-- Keep your existing two buttons here -->
+                    </div>
+                </div>
+                <img src="images/Group 6.png" alt="Lady representing web hosting"
+                    class="block h-auto w-full max-w-[552px] object-contain lg:flex-1">
+            </div>
+        </section>
+    </hero>
+
+
+    <links
+        class="w-full max-w-[1138px] h-auto lg:h-[546px] flex flex-col items-center gap-[5px] px-5 lg:px-[30px] lg:max-w-[1198px] mt-[30px] lg:mx-auto lg:mb-[30px] lg:mt-[50px]">
+
+        <div class="w-full h-auto lg:h-[547px] flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-0">
+            <div class="w-full lg:w-auto flex flex-col items-start justify-between gap-[20px]">
+                <h2
+                    class="width-[594px] font-extrabold text-[28px] md:text-[38px] leading-[40px] md:leading-[64px] pop tracking-normal">
+                    True Cloud Web Hosting
+                </h2>
+                <p class="width-[573px] font-inter font-normal text-[16px] leading-[32px] tracking-normal">
+                    True Cloud Web Hosting All of the hosting packages we offer are deployed instantly on our SSD
+                    powered cloud. We don’t use <br class="hidden lg:block">dedicated servers that operate on single
+                    pieces of hardware. Our
+                    <br class="hidden lg:block">entire
+                    infrastructure is built to be reliable, secure, and scalable.
+                </p>
+            </div>
+            <div class="w-full lg:w-auto flex flex-col items-center justify-center m-0 lg:m-[20px] gap-[20px]">
+                <section
+                    class="w-full lg:w-[608px] grid grid-cols-2 sm:grid-cols-3 gap-x-[10px] gap-y-[30px] lg:gap-y-[50px] items-center justify-items-center">
+                    <img src="images/cPanel_orange_RGB 1.png" alt="cPanel" class="max-w-full w-[140.71px] h-[30px]">
+
+                    <img src="images/secured-by-Imunify360-green 1.png" alt="Secured"
+                        class="max-w-full w-[125.71px] h-[50px]">
+
+                    <img src="images/litespeed-logo 1.png" alt="LiteSpeed" class="max-w-full w-[125.71px] h-[53px]">
+
+                    <img src="images/Rectangle 11.png" alt="Hosting logo 4" class="max-w-full w-[192.71px] h-[90px]">
+
+                    <img src="images/Rectangle 12.png" alt="Hosting logo 5" class="max-w-full w-[158.71px] h-[56px]">
+
+                    <img src="images/Rectangle 13.png" alt="Hosting logo 6" class="max-w-full w-[143.71px] h-[47px]">
+                </section>
+            </div>
+        </div>
+        <div
+            class="w-full h-auto lg:h-[218px] flex flex-wrap lg:flex-nowrap items-start justify-center lg:justify-between mx-0 my-[30px] lg:m-[30px] gap-[30px] lg:gap-[20px]">
+            <div class="w-full sm:w-[259px] h-auto lg:h-[223px] flex flex-col gap-[15px] items-center">
+                <img src="images/icn1 1.png" alt="" w-[101px] h-[100px]>
+                <h2 class="text-[20px] font-bold leading-none tracking-normal text-center">99.9% Uptime
+                </h2>
+                <p class="text-[12px] font-light leading-none tracking-normal text-center">We Keep Your Web
+                    build Online 24x7x365.
+                    Downtime not only costs you lost visitors but also damages your reputation and search engine
+                    rankings.</p>
+            </div>
+            <div class="w-full sm:w-[259px] h-auto lg:h-[223px] flex flex-col gap-[15px] items-center">
+                <img src="images/Icon (13).png" alt="" w-[101px] h-[100px]>
+                <h2 class="text-[20px] font-bold leading-none tracking-normal text-center">Blazing Fast Web
+                    Hosting</h2>
+                <p class="text-[12px] font-light leading-none tracking-normal text-center">We Keep Your Web
+                    build Online 24x7x365.
+                    Downtime not only costs you lost visitors but also damages your reputation and search engine
+                    rankings.</p>
+            </div>
+            <div class="w-full sm:w-[259px] h-auto lg:h-[223px] flex flex-col gap-[15px] items-center">
+                <img src="images/icn4 1.png" alt="" w-[101px] h-[100px]>
+                <h2 class="text-[20px] font-bold leading-none tracking-normal text-center">Free SSL
+                    Certificates</h2>
+                <p class="text-[12px] font-light leading-none tracking-normal text-center">We Keep Your Web
+                    build Online 24x7x365.
+                    Downtime not only costs you lost visitors but also damages your reputation and search engine
+                    rankings.</p>
+            </div>
+            <div class="w-full sm:w-[259px] h-auto lg:h-[223px] flex flex-col gap-[15px] items-center">
+                <img src="images/Frame 2.png" alt="" w-[101px] h-[100px]>
+                <h2 class="text-[20px] font-bold leading-none tracking-normal text-center">24/7 friendly
+                    Support</h2>
+                <p class="text-[12px] font-light leading-none tracking-normal text-center">We Keep Your Web
+                    build Online 24x7x365.
+                    Downtime not only costs you lost visitors but also damages your reputation and search engine
+                    rankings.</p>
+            </div>
+        </div>
+    </links>
+    <section
+        class="w-full max-w-full lg:w-[1157px] h-auto lg:h-[1212px] flex flex-col items-center gap-[20px] px-5 lg:px-[30px] mt-[30px] lg:mx-auto lg:mb-[30px] lg:mt-[50px]">
+        <div class="w-full h-auto lg:h-[120px] flex flex-col gap-[30px] items-center justify-center">
+            <h1
+                class="w-full max-w-[650px] h-auto lg:h-[120px] text-[30px] md:text-[50px] font-semibold leading-[40px] md:leading-[60px] tracking-normal text-center">
+                Ready to get started with Lemon Wares?</h1>
+            <p class="text-[18px] md:text-[25px] font-normal leading-[25px] tracking-normal text-center">Choose the
+                package that suits you</p>
+        </div>
+        <div
+            class="flex flex-wrap items-center justify-center lg:justify-between gap-[15px] mt-[30px] lg:mt-[50px] mb-[40px]">
+
+            <p id="monthlyText" class="text-[18px] font-normal leading-[25px] tracking-normal text-center">
+                Monthly
+            </p>
+
+            <button id="toggleBtn" type="button" role="switch" aria-checked="false"
+                class="relative flex h-[42px] w-[80px] items-center rounded-full border-0 bg-accent p-[4px]">
+                <span id="toggleCircle"
+                    class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300"></span>
+            </button>
+
+            <p id="yearlyText" class="text-[18px] font-normal leading-[25px] tracking-normal text-center">
+                Yearly
+            </p>
+
+            <span
+                class="text-[10px] font-normal leading-[10px] tracking-normal bg-hue text-center rounded-full px-[8px] py-[5px]">
+                20% discount
+            </span>
+        </div>
+        <ul class="flex w-full sm:w-auto justify-center gap-[0px] text-[16px] text-primary">
+            <li
+                class="cursor-pointer border-b-2 border-b-accent pb-2 text-[15px] font-semibold leading-none text-[22px] sm:text-[30px] font-semibold leading-[40px] tracking-[0] w-1/2 sm:w-[300px] text-center transition duration-300">
+                Basic
+            </li>
+            <li
+                class="cursor-pointer border-b-2 border-b-#C4C4C4 pb-2 text-[15px] font-semibold leading-none text-[22px] sm:text-[30px] font-semibold leading-[40px] tracking-[0] w-1/2 sm:w-[300px] text-center transition duration-300">
+                Premium
+            </li>
+
+        </ul>
+        <div
+            class="mx-auto grid w-full lg:w-fit grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-[30px] lg:gap-[80px]">
+            <article
+                class="h-auto lg:h-[716px] w-full max-w-[299px] lg:w-[299px] border border-[#C4C4C4] rounded-[8px] p-[30px] flex flex-col gap-[20px]">
+                <h1 class="font-poppins text-[28px] font-semibold leading-[25px] tracking-[0] ">Starter</h1>
+                <p class="text-[12px] font-normal leading-[18px] tracking-[0] ">with all your customers via
+                    all conversation channels in one central dashboard.</p>
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="font-poppins text-[42px] font-semibold leading-[32px] tracking-[0]"> $9.99 </h2>
+                    <p class="font-poppins text-[12px] font-light leading-[14px] tracking-[0]">Per month</p>
+                </div>
+                <button
+                    class="h-[50px] w-[235px] max-w-full rounded-[12px] text-[14px] font-semibold leading-[32px] tracking-[0] border-2 border-black">Choose
+                    this Plan
+                </button>
+
+                <ul class="flex flex-col gap-[25px] mt-[20px]">
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-black"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">2GB SSD</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">10GB Bandwidth</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">15 Email Accounts</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Unlimited Database</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">4 Subdomains</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">1 Parked Domain</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]"> 2 Websites</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Free ssl</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Softaculos</span>
+                    </li>
+                </ul>
+            </article>
+
+            <article
+                class="h-auto lg:h-[716px] w-full max-w-[299px] lg:w-[299px] border border-[#C4C4C4] rounded-[8px] p-[30px] flex flex-col gap-[20px]">
+                <h1 class="font-poppins text-[28px] font-semibold leading-[25px] tracking-[0] ">Standard</h1>
+                <p class="text-[12px] font-normal leading-[18px] tracking-[0]">with all your customers via
+                    all conversation channels in one central dashboard.</p>
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="font-poppins text-[42px] font-semibold leading-[32px] tracking-[0]"> $19.99 </h2>
+                    <p class="font-poppins text-[12px] font-light leading-[14px] tracking-[0]">Per month</p>
+                </div>
+                <button
+                    class="h-[50px] w-[235px] max-w-full rounded-[12px] text-[14px] font-semibold leading-[32px] tracking-[0] border-2 border-black">Choose
+                    this Plan
+                </button>
+
+                <ul class="flex flex-col gap-[25px] mt-[20px]">
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-black"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">2GB SSD</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">10GB Bandwidth</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">15 Email Accounts</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Unlimited Database</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">4 Subdomains</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">1 Parked Domain</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]"> 2 Websites</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Free ssl</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Softaculos</span>
+                    </li>
+                </ul>
+            </article>
+
+            <article
+                class="h-auto lg:h-[716px] w-full max-w-[299px] lg:w-[299px] border border-[#C4C4C4] rounded-[8px] p-[30px] flex flex-col gap-[20px]">
+                <h1 class="font-poppins text-[28px] font-semibold leading-[25px] tracking-[0] ">Supreme</h1>
+                <p class="text-[12px] font-normal leading-[18px] tracking-[0]">with all your customers via
+                    all conversation channels in one central dashboard.</p>
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="font-poppins text-[42px] font-semibold leading-[32px] tracking-[0]"> $29.99 </h2>
+                    <p class="font-poppins text-[12px] font-light leading-[14px] tracking-[0]">Per month</p>
+                </div>
+                <button
+                    class="h-[50px] w-[235px] max-w-full rounded-[12px] text-[14px] font-semibold leading-[32px] tracking-[0] border-2 border-black">Choose
+                    this Plan
+                </button>
+
+                <ul class="flex flex-col gap-[25px] mt-[20px]">
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-black"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">2GB SSD</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">10GB Bandwidth</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">15 Email Accounts</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Unlimited Database</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">4 Subdomains</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">1 Parked Domain</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]"> 2 Websites</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Free ssl</span>
+                    </li>
+                    <li class="flex items-center gap-[20px]">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <span class="text-[16px] font-normal leading-[18px] tracking-[0]">Softaculos</span>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section
+        class="h-auto w-full max-w-full lg:w-[1160px] opacity-100 flex items-center px-5 lg:px-[30px] mt-[30px] lg:mx-auto lg:mb-[30px] lg:mt-[50px]">
+        <img src="images/Testimonials.png" alt="Testimonials" class="max-w-full h-auto">
+    </section>
+    <section
+        class="relative mx-auto mt-[50px] flex h-auto w-full gap-[20px] items-center justify-center overflow-hidden lg:overflow-visible">
+        <img src="images/Background.png" alt="Background" class="relative block h-auto w-full lg:w-[1000PX]">
+
+        <img src="images/Elements.png" alt="Elements"
+            class="absolute left-0 lg:left-[85px] top-0 lg:-top-[10px] h-full w-full lg:w-[1050PX] object-contain">
+        <h1 class="absolute z-10 text-[26px] sm:text-[40px] lg:text-[60px] font-semibold leading-[36px] sm:leading-[52px] lg:leading-[88px] -mt-[30px] lg:-mt-[50px] px-5 lg:px-0 tracking-[0]
+            text-center"> We're here to make your<br> website awesome.
+        </h1>
+        <button
+            class="absolute bottom-[20px] lg:bottom-[50px] z-10 h-[50px] flex gap-[10px] mt-[50px] items-center justify-center w-[235px] rounded-[12px] text-[14px] bg-accent font-semibold leading-[32px] tracking-[0] text-white"><i
+                class="fa-brands fa-whatsapp text-[30px] text-white"></i>Get in touch with us</button>
+    </section>
+
+</body>
+<footer class="w-full h-auto bg-accent mt-[30px] flex flex-col justify-center px-6 py-10 sm:px-10 lg:px-20 lg:py-16">
+
+    <div
+        class="w-full flex flex-col gap-10 sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:flex-wrap lg:justify-between lg:gap-x-10 xl:gap-x-[70px]">
+
+        <!-- Logo and description -->
+        <div class="flex flex-col items-start gap-[30px] sm:col-span-2 lg:col-span-1">
+            <img src="images/Lemon Wares white Logo 1500px wide 1.png" alt="Lemon Wares Logo"
+                class="w-[90px] h-[60px] object-contain">
+
+            <p class="font-inter text-white text-base font-normal leading-[32px] tracking-normal max-w-full">
+                Lorem ipsum dolor sit amet,<br>
+                consectetur adipiscing elit
+                ut aliquam,<br>
+                purus sit amet luctus venenatis, lectus<br>
+                magna fringilla urna, porttitor rhoncus<br>
+                dolor purus non enim praesent elem
+            </p>
+        </div>
+
+        <!-- Service -->
+        <div class="flex flex-col items-start gap-[30px]">
+            <h2 class="text-white text-[20px] font-semibold leading-[32px] tracking-[0]">
+                Service
+            </h2>
+
+            <ul class="flex flex-col items-start gap-[20px]">
+                <li class="text-white text-[16px] font-normal leading-[32px]">Domain</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Shared Hosting</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Cloud Hosting</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Private Hosting</li>
+            </ul>
+        </div>
+
+        <!-- Hosting -->
+        <div class="flex flex-col items-start gap-[30px]">
+            <h2 class="text-white text-[20px] font-semibold leading-[32px] tracking-[0]">
+                Hosting
+            </h2>
+
+            <ul class="flex flex-col items-start gap-[20px]">
+                <li class="text-white text-[16px] font-normal leading-[32px]">Cheap Hosting</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Hosting Wordpress</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Email Hosting</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Hosting Unlimited</li>
+            </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="flex flex-col items-start gap-[30px]">
+            <h2 class="text-white text-[20px] font-semibold leading-[32px] tracking-[0]">
+                Company
+            </h2>
+
+            <ul class="flex flex-col items-start gap-[20px]">
+                <li class="text-white text-[16px] font-normal leading-[32px]">About</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Careers</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Contact Us</li>
+            </ul>
+        </div>
+
+        <!-- Help -->
+        <div class="flex flex-col items-start gap-[30px]">
+            <h2 class="text-white text-[20px] font-semibold leading-[32px] tracking-[0]">
+                Help
+            </h2>
+
+            <ul class="flex flex-col items-start gap-[20px]">
+                <li class="text-white text-[16px] font-normal leading-[32px]">FAQ</li>
+                <li class="text-white text-[16px] font-normal leading-[32px]">Help Support</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-white text-[14px] font-normal leading-[24px] mt-12 tracking-[0]">
+        Built by Jeremiah with love in Lagos. Copyright 2021
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</html>
